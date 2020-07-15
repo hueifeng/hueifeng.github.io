@@ -1,0 +1,66 @@
+a, a:hover,.menu li a:hover,.menu li.on a,.menu li .subnav a:hover:after,.menu li .subnav a.on,.menu li.subcate:hover a,.menu li.subcate:hover .subnav a:hover,.menu li.subcate:hover .subnav a.on,.menu li.subcate:hover .subnav a.on:after,.sch-m input,.sch-m input:focus,.sch-m button:after,.schfixed input:focus,.schclose,.schform input,.schform button:after,.post h2 a:hover,.post h2 .istop:before,.post .user a:hover,.post .date a:hover,.post .cate a:hover,.post .views a:hover,.post .cmtnum a:hover,.post .readmore:hover,.post .readmore:hover:after,.post .tags a:hover,.pages a:hover,a.backlist:hover,.cmtsfoot .reply:hover,.cmtsfoot .reply:hover:before,.cmtarea textarea:focus,.cmtform input:focus,.night .cmtform input:focus,.cmtsubmit button:hover,.cmtsubmit button:hover:before,.sidebox dd a:hover,#divTags ul li a:hover,#divCalendar td a,#divCalendar #today,#divContorPanel .cp-login a:hover,#divContorPanel .cp-vrs a:hover,#divContorPanel .cp-login a:hover:before,#divContorPanel .cp-vrs a:hover:before,.footer a:hover,.goback:hover,.goback:hover:after,.relateinfo h3 a:hover,.teles, .telesmore,.relate,.sitemap a:hover,.night .post h2 a:hover,.night .relateinfo h3 a:hover,.night #cancel-reply,.night #cancel-reply:before,.night .pages a:hover,.night .errorpage .errschtxt:focus,.errschtxt:focus,.night .errorpage .goback:hover,.night .relatelist a:hover,.night .sidebox dd .sidecmtarticle a:hover,.sidebox dd .sidelink a:hover,.night .sidebox dd .sidelink a:hover,.night .sidebox dd .sideitem .itemtitle:hover,.sidebox dd .noimg .sidelink a:hover,.archivedate,.archivelist h3 a:hover,.night .archivelist h3 a:hover,.copynoticetxt a:hover { color:#FFFFFF; }.single p.ue-upload a { color:#FFFFFF!important; }@media screen and (max-width:1080px){.menu ul li.subcate.slidedown > a:after {color:#FFFFFF}}.menu li:before,.schfixed button,.pagebar .now-page,.cmtpagebar .now-page,.pagebar a:hover,.cmtpagebar a:hover,a.backtotop:hover,.night .errorpage .errschbtn,.tagscloud li:hover {background:#FFFFFF}.menuico span,.lazyline,a.setnight:hover,.night a.backtotop:hover {background-color:#FFFFFF}.menu li .subnav,.schfixed {border-top-color:#FFFFFF}.menu li.subcate .subnav a {color:#333}.menu li .subnav:before,.sch-m input,.schfixed:before,.schform input,.single h1:after,.single h2:after,.single h3:after,.single h4:after,.single h5:after,.single h6:after,.contitle h1,.contitle h2 {border-bottom-color:#FFFFFF}.post .readmore:hover,.post .tags a:hover,.telesmore i,.pagebar .now-page,.cmtpagebar .now-page,.pagebar a:hover,.cmtpagebar a:hover,a.backlist:hover,.cmtsubmit button:hover,#divTags ul li a:hover,#divCalendar td a,#divContorPanel .cp-login a:hover,#divContorPanel .cp-vrs a:hover,.goback:hover,.night .post .readmore:hover,.night #divContorPanel .cp-login a:hover, .night #divContorPanel .cp-vrs a:hover,.night #cancel-reply,.night .pages a:hover,.night .cmtsubmit button:hover,.night .errorpage .errschbtn,.night .errorpage .goback:hover {border-color:#FFFFFF}.wrapper { background:#FFFFFF; }@media screen and (max-width: 1920px)
+.wrap {
+    width: 100%;
+}
+
+@media screen and (max-width: 1080px)
+.menu ul li a {
+    padding: 0 18px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    display: block;
+}
+.header{
+background:#512BD4;
+}
+.menu li a {
+    font-size: 16px;
+    color: #FFFEFD;
+    position: relative;
+    display: inline-block;
+}
+.header .name a {
+    font-size: 28px;
+    color: #FFFEFD;
+    line-height: 70px;
+}
+a, a:hover, .menu li a:hover, .menu li.on a, .menu li .subnav a:hover:after, .menu li .subnav a.on, .menu li.subcate:hover a, .menu li.subcate:hover .subnav a:hover, .menu li.subcate:hover .subnav a.on, .menu li.subcate:hover .subnav a.on:after, .sch-m input, .sch-m input:focus, .sch-m button:after, .schfixed input:focus, .schclose, .schform input, .schform button:after, .post h2 a:hover, .post h2 .istop:before, .post .user a:hover, .post .date a:hover, .post .cate a:hover, .post .views a:hover, .post .cmtnum a:hover, .post .readmore:hover, .post .readmore:hover:after, .post .tags a:hover, .pages a:hover, a.backlist:hover, .cmtsfoot .reply:hover, .cmtsfoot .reply:hover:before, .cmtarea textarea:focus, .cmtform input:focus, .night .cmtform input:focus, .cmtsubmit button:hover, .cmtsubmit button:hover:before, .sidebox dd a:hover, #divTags ul li a:hover, #divCalendar td a, #divCalendar #today, #divContorPanel .cp-login a:hover, #divContorPanel .cp-vrs a:hover, #divContorPanel .cp-login a:hover:before, #divContorPanel .cp-vrs a:hover:before, .footer a:hover, .goback:hover, .goback:hover:after, .relateinfo h3 a:hover, .teles, .telesmore, .relate, .sitemap a:hover, .night .post h2 a:hover, .night .relateinfo h3 a:hover, .night #cancel-reply, .night #cancel-reply:before, .night .pages a:hover, .night .errorpage .errschtxt:focus, .errschtxt:focus, .night .errorpage .goback:hover, .night .relatelist a:hover, .night .sidebox dd .sidecmtarticle a:hover, .sidebox dd .sidelink a:hover, .night .sidebox dd .sidelink a:hover, .night .sidebox dd .sideitem .itemtitle:hover, .sidebox dd .noimg .sidelink a:hover, .archivedate, .archivelist h3 a:hover, .night .archivelist h3 a:hover, .copynoticetxt a:hover{
+    color: #0188fb;
+}
+.content {
+    float: left;
+    display: inline;
+}
+.sidebar {
+  margin-left: 1%;
+    width: 18%;
+    float: left;
+}
+.header .name {
+      margin-left: 2%;
+    width: 200px;
+    height: 70px;
+    float: left;
+    display: inline;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.menu {
+    float: none;
+    line-height: 70px;
+}
+.pagebar .now-page, .cmtpagebar .now-page {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    padding: 5px 10px;
+    margin: 0 5px 5px;
+    border: 1px solid #0188fb;
+    border-radius: 2px;
+    background: #0188fb;
+    display: inline-block;
+}

@@ -1,144 +1,46 @@
+---
+layout: default
+title: 冯辉 - HueiFeng
+---
+<div class="block">
+    {% for post in paginator.posts %}
+    <div class="post item">
+        <h2><a href="https://blog.stackable.cn/?id=63">{{ post.title }}</a></h2>
+        <div class="info">
+        </div>
+        <div class="intro">
+            {{ post.excerpt }}</div>
+        <div><a href="https://blog.stackable.cn/?id=63" class="readmore">查看全文</a></div>
+    </div>
+    {% endfor %}
 
-<!DOCTYPE html>
-<html xml:lang="zh-Hans" lang="zh-Hans">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <title>冯辉 - HueiFeng</title>
-    <meta name="keywords" content="冯辉,HueiFeng,.NET,.NET Core,Docker,k8s">
-    <meta name="description" content="冯辉 - HueiFeng .NET 开发者，微软最有价值专家，Microsoft MVP">
-    <link rel="shortcut icon" href="https://blog.stackable.cn/zb_users/upload/2020/07/20200710124417159435625753023.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/share.css" />
-    <script src="/assets/js/share.js"></script>
-    <link rel="stylesheet" rev="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" rev="stylesheet" href="/assets/css/skin.css" type="text/css" media="all" />
-    <script src="/assets/js/jquery-2.2.4.min.js"></script>
-    <script>window.tpure={viewallstyle:'1',viewallheight:'1000',loadpagenum:'3',lazyload:'on',lazyline:'on',lazynum:'on',night:'on',setnightstart:'22',setnightover:'6',singlekey:'on',pagekey:'on',tfontsize:'on',fixsidebar:'on',fixsidebarstyle:'1',removep:'on',backtotop:'on'}</script>
-    <link rel="alternate" type="application/rss+xml" href="https://blog.stackable.cn/feed.php" title="HueiFeng" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.stackable.cn/zb_system/xml-rpc/?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.stackable.cn/zb_system/xml-rpc/wlwmanifest.xml" />
-</head><body class="index">
-<div class="wrapper">
-    <div class="header fixed">
-    <div class="wrap">
-        <h1 class="name"><a href="https://blog.stackable.cn/">HueiFeng</a></h1>
-        <div class="head">
-            <div class="menuico"><span></span><span></span><span></span></div>
-            <div class="menu">
-                <ul>
-                    <li id="nvabar-item-index"><a href="https://blog.stackable.cn/">首页</a></li><li id="navbar-page-2"><a href="https://blog.stackable.cn/?id=2">留言本</a></li><li id="navbar-category-2"><a href="https://blog.stackable.cn/?cate=2">ASP.NET Web APi</a></li><li id="navbar-category-3"><a href="https://blog.stackable.cn/?cate=3">ASP.NET CORE</a></li><li id="navbar-category-4"><a href="https://blog.stackable.cn/?cate=4">ASP.NET CORE MVC</a></li><li id="navbar-category-6"><a href="https://blog.stackable.cn/?cate=6">ASP.NET MVC</a></li><li id="navbar-category-7"><a href="https://blog.stackable.cn/?cate=7">C#</a></li>                </ul>
-                    <div class="schico statefixed">
-                        <a href="javascript:;"></a>
-                        <div class="schfixed">
-                            <form method="post" name="search" action="https://blog.stackable.cn/zb_system/cmd.php?act=search">
-                                <input type="text" name="q" placeholder="搜索..." class="schinput">
-                                <button type="submit" class="btn"></button>
-                            </form>
-                        </div>
-                    </div>
-                <form method="post" name="search" action="https://blog.stackable.cn/zb_system/cmd.php?act=search" class="sch-m">
-                    <input type="text" name="q" placeholder="搜索..." class="schinput">
-                    <button type="submit" class="btn"></button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>    <div class="main fixed">
-                <div class="mask"></div>
-                <div class="wrap">
-           
-            <div class="content">
-                <div class="block">
-                                                                    <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=63">通过Windows Visual Studio远程调试WSL2中的.NET Core Linux应用程序</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                最近两天在Linux中调试.NET Core应用程序，同时我发现在Linux中调试.NET Core应用程序并不容易。一直习惯在Visual Studio中进行编码和调试。现在我想的是可以简单快速的测...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=63" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=62">MSIL入门（二）通过对象看IL</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                前言 上一篇文章主要介绍了IL的概念以及基础的示例代码，在这一篇文章中我们将通过对象调用看IL。 创建对象与调用方法 class Program { static void Main(str...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=62" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=61">MSIL入门（一）C#代码与IL代码对比</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                基础概念 Microsoft中间语言（MSIL），也成为通用中间语言（CIL），是一组与平台无关的指令，由特定于语言的编译器从源代码生成。MSIL是独立于平台的，因此，他可以在任何公共语言基础架构支持...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=61" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=60">ASP.NET 开源导入导出库Magicodes.IE 多Sheet导入教程</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                多Sheet导入教程 说明 本教程主要说明如何使用Magicodes.IE.Excel完成多个Sheet数据的Excel导入。 要点 多个相同格式的Sheet数据导入 多个不同格式的Sheet数据导...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=60" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=59">Magicodes.IE在.NET Core中通过请求头导出多种格式文件</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                前言 在2.2里程碑中我们增加了一些新的功能,正如标题所写通过请求头进行导出我们不同格式的文件.下面我们来看一下如何使用.通过这种方式无论是对我们的数据多用途，还是说对我们的数据校验都做到了轻松易配。...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=59" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=58">在 Visual Studio 中查看反汇编代码</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                在源代码中设置断点，然后进行点击调试 若要启用反汇编窗口，请在工具˃选项（或工具˃ 选项˃调试下，选择启用地址级调试。 若要在调试期间打开反汇编窗口，请选择窗口˃反汇编或按 Alt+8 。 ![](...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=58" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=57">【翻译】.NET 5 Preview5发布</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                今天，发布了.NET 5.0 Preview5。主要对它进行了一小部分新功能和性能的改进。.NET 5.0 Preview 4包含了一些计划和.NET 5.0要交付的内容。 现在，大多数的功能都已经包...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=57" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=56">ASP.NET Core中间件与HttpModule有何不同</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                前言 在ASP.NET Core中最大的更改之一是对Http请求管道的更改，在ASP.NET中我们了解HttpHandler和HttpModule但是到现在这些已经被替换为中间件那么下面我们来看一下他...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=56" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=55">修改Nuget包默认存放路径</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                默认情况下所有的Nuget包都会下载到C盘，目前我这边有几十个G的大小，这导致我C盘的容量越来越小... 我们可以在Nuget.config中修改package存放路径，C:\Users\{UserN...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=55" class="readmore">查看全文</a></div></div>                                                                                            <div class="post item">
-    <h2><a href="https://blog.stackable.cn/?id=54">ASP.NET Core 3.x API版本控制</a></h2>
-    <div class="info">
-            </div>
-        <div class="intro">
-                                前言 一般来说需要更改我们API的时候才考虑版本控制，但是我觉得我们不应该等到那时候来实现它，我们应该有一个版本策略从我们应用程序开发时就开始制定好我们的策略，我们一直遵循着这个策略进行开发。 我们其...                        </div>
-    <div><a href="https://blog.stackable.cn/?id=54" class="readmore">查看全文</a></div></div>                                                            </div>
-                                <div class="pagebar">
-                                        <a href="https://blog.stackable.cn/">首页️</a>
-                            <span class="now-page">1</span>
-                            <span class="next-page"><a href="https://blog.stackable.cn/?page=2">2</a></span>
-                            <a href="https://blog.stackable.cn/?page=3">3</a>
-                            <a href="https://blog.stackable.cn/?page=2">下页</a>
-                            <a href="https://blog.stackable.cn/?page=6">尾页</a>
-                            </div>
-                            </div>
-
-            <div class="sidebar fixed">
-    			<dl id="divTags" class="sidebox">
-    <dt>标签列表</dt>    <dd>
-        				<ul><li><a href="https://blog.stackable.cn/?tags=1">ASP.NET Core<span class="tag-count"> (3)</span></a></li>
-<li><a href="https://blog.stackable.cn/?tags=2">options<span class="tag-count"> (1)</span></a></li>
-<li><a href="https://blog.stackable.cn/?tags=3">C#<span class="tag-count"> (1)</span></a></li>
-</ul>
-		    </dd>
-</dl>			</div>
-        </div>
-    </div>
-    <div class="footer">
-    <div class="fademask"></div>
-        <div class="wrap">
-            <h3><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-155252267-1"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-155252267-1');</script><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278294701'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278294701%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><div style="width:300px;margin:0 auto; padding:20px 0;"><img src='https://blog.stackable.cn/zb_users/upload/2019/12/20191217151613157656697398334.png'/>		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37010402000862" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鲁公网安备 37010402000862号</p></a>		 	</div><span>鲁ICP备19058706号</span>Copyright © 2019  <script type="text/tmplate" id="mvplink"> <dl id="tpure_HotCmtArticle" class="mvplink">     <a href="https://mvp.microsoft.com/zh-cn/PublicProfile/5003855">    <img class="avatar-logo" src="https://blog.stackable.cn/zb_users/upload/2020/07/20200710133830159435951070431.svg" alt="Microsoft MVP">            </a></dl> </script><script type="text/tmplate" id="profilelink"><dl id="tpure_NewArticle" class="sidebox" style="/* display: none; */">        <div>                        <a><span><img src="https://mvp.microsoft.com/zh-cn/PublicProfile/Photo/5003855"></span></a><h3 style="    text-align: center;    font-weight: bold;    margin-top: 10px;">HueiFeng</h3> <p style="    text-align: center;">    Developer Technologies    </p>    </div></dl></script><script>	$("#divContorPanel").css('display','none'); $("#tpure_HotViewArticle").css('display','none'); $("#tpure_HotCmtArticle").css('display','none'); $("#tpure_RecArticle").css('display','none'); $("#tpure_NewComment").css('display','none'); $("#tpure_NewArticle").css('display','none'); $(".sidebar").prepend($('#mvplink').html());$(".sidebar").prepend($('#profilelink').html()); 	</script></h3>
-        </div>
-    </div>
 </div>
-</body>
-</html><!--11.29 ms , 8 query , -613kb memory , 0 error-->
+<div class="pagebar">
+    {% if paginator.total_pages > 1 %}
+    {% if paginator.previous_page %}
+    {% else %}
+    <a class="previous disabled">←</a>
+    {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <a class="active">{{ page }}</a>
+    {% elsif page == 1 %}
+    <a href="/">{{ page }}</a>
+    {% elsif page == paginator.total_pages %}
+    <a
+        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% else %}
+    <a
+        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+
+    {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+
+    <a title="下一页" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">→</a>
+
+    {% else %}
+    <a class="next disabled"><span>→</span></a>
+    {% endif %}
+    {% endif %}
+</div>

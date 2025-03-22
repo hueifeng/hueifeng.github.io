@@ -32,9 +32,11 @@ EndGlobal
 
 ### ‌‌SLNX格式
 
+```
 <Solution>
   <Project Path="ConsoleApp1\ConsoleApp1.csproj" />
 </Solution>
+```
 
 去除GUID‌：通过项目路径自动标识，消除36位随机字符串
 ‌隐式配置‌：默认继承全局编译设置（Debug/Release + Any CPU）

@@ -1,0 +1,72 @@
+在.NET开发中，解决方案文件（.sln）长期扮演着工程管理的核心角色。但随着项目复杂度提升，传统文本格式的局限性逐渐显现。微软推出的新一代SLNX格式，以XML为基础重构了解决方案的表示方式，我们通过一个简单示例观察其改进。
+
+‌### 原‌Sln
+以下是一个包含一个csproj的传统解决方案文件片段：
+
+```
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.35906.104 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{1627B389-1EC0-4DB5-B98D-2B4D247BC954}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1627B389-1EC0-4DB5-B98D-2B4D247BC954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1627B389-1EC0-4DB5-B98D-2B4D247BC954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1627B389-1EC0-4DB5-B98D-2B4D247BC954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1627B389-1EC0-4DB5-B98D-2B4D247BC954}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8C36248-50B7-4B28-A9D2-878847467055}
+	EndGlobalSection
+EndGlobal
+```
+
+### ‌‌SLNX格式
+
+<Solution>
+  <Project Path="ConsoleApp1\ConsoleApp1.csproj" />
+</Solution>
+
+去除GUID‌：通过项目路径自动标识，消除36位随机字符串
+‌隐式配置‌：默认继承全局编译设置（Debug/Release + Any CPU）
+
+`解决方案文件夹的使用方式`
+
+<Solution>
+    <!-- 基础项目引用 -->
+    <Project Path="ConsoleApp1/ConsoleApp1.csproj" />
+
+    <!-- 解决方案文件夹 -->
+    <Folder Name="src">
+        <Project Path="src/ConsoleApp1/ConsoleApp1.csproj" />
+        <Project Path="src/ConsoleApp2/ConsoleApp2.csproj" />
+    </Folder>
+
+    <!-- 多层级嵌套 -->
+    <Folder Name="tests">
+        <Folder Name="unit">
+            <Project Path="tests/unit/UnitTest.csproj" />
+        </Folder>
+    </Folder>
+</Solution>
+
+```mermaid
+graph TD
+    A[Solution] --> B[src/]
+    A --> C[tests/]
+    B --> D[ConsoleApp1.csproj]
+    B --> E[ConsoleApp2.csproj]
+    C --> F[unit/]
+    F --> G[UnitTest.csproj]
+```
+
+
